@@ -21,9 +21,6 @@ public class User {
     private Long userId;
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Account> accounts;
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Beneficiary> beneficiaries;
-
 
     private String password;
     private String username;
